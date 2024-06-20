@@ -1,13 +1,27 @@
 import React, { useState } from "react";
 import "./App.css";
-import NavBar from "./components/NavBar";
 import artisan from "./assets/artisan.png";
 import beverage from "./assets/beverage.png";
 import coffee from "./assets/coffee.png";
 import mojito from "./assets/mojito.png";
 import hottea from "./assets/hotTea.png";
+import filter from "./assets/filter.png";
+import pen from "./assets/pen.png";
+
+import SearchBar from "./components/SearchBar"
+import Filters from "./components/Filters";
+import ProductList from "./components/ProductList";
+import Cart from "./components/Cart";
+import Voucher from "./components/Voucher";
+import Summary from "./components/Summary";
+import UserProfile from "./components/UserProfile";
 
 const App = () => {
+  const [cart, setCart] = useState([]);
+  const [total, setTotal] = useState(0);
+  const [voucher, setVoucher] = useState("");
+  const [voucherDiscount, setVoucherDiscount] = useState(0);
+
   const data = [
     { title: "ORI GIMBER 700ml", price: 24.95, image: "" },
     { title: "GIMBER N2 700ml", price: 25.85, image: "" },
@@ -23,56 +37,60 @@ const App = () => {
     { title: "GIMBER N2 500 ml", price: 26.00, image: "" },
     { title: "DUO-PACK GIMBE...", price: 52.80, image: "" }
   ];
+
+  const addToCart = (item) => {
+    setCart([...cart, item]);
+    setTotal(total + item.price);
+  };
+
+  const applyVoucher = () => {
+    if (voucher === "DISCOUNT10" ) {
+      setVoucherDiscount(total * 0.10);
+    } 
+    else if(voucher === "DISCOUNT50"){
+      setVoucherDiscount(total * 0.50);
+    }
+      else {
+      alert("Invalid voucher code");
+    }
+  };
+
+  const discount = total * 0.10; // 10% discount
+  const gratuity = 4.00; // fixed gratuity amount
+  const finalTotal = total - discount - voucherDiscount + gratuity;
+
   return (
     <div id="parent">
       <div id="leftDiv">
-        <div id="nav">
-          <div id="first">
-            <input type="text" placeholder="Search all product here..." />
-            <button>Search</button>
-          </div>
-          <button>filter</button>
-        </div>
-        <div id="allFilter">
-          <div className="filters">
-            <img src={coffee} alt="" />
-            Ice Coffee
-          </div>
-          <div className="filters">
-            <img src={hottea} alt="" />
-            Hot Coffee
-          </div>
-          <div className="filters">
-            <img src={artisan} alt="" />
-            Artisan Tea
-          </div>
-          <div className="filters">
-            <img src={mojito} alt="" />
-            Ice Mojito
-          </div>
-          <div className="filters">
-            <img src={beverage} alt="" />
-            Beverage
-          </div>
-        </div>
-        <div id="iteams">{
-          data.map((ele,index)=>(
-            <div className="products">
-            <img
-              src="https://uk.gimber.com/cdn/shop/products/gimber-200ml_430x430_crop_center@2x.jpg?v=1608712709"
-              alt=""
-            />
-            <p>{ele.title}</p>
-            <p className="price">${ele.price}</p>
-            <button>add to cart</button>
-          </div>
-          ))}
-         
-          
-        </div>
-        main
+        <SearchBar filter={filter} />
+        <Filters
+          filters={[
+            { img: coffee, text: "Ice Coffee" },
+            { img: hottea, text: "Hot Coffee" },
+            { img: artisan, text: "Artisan Tea" },
+            { img: mojito, text: "Ice Mojito" },
+            { img: beverage, text: "Beverage" },
+          ]}
+        />
+        <ProductList data={data} addToCart={addToCart} />
       </div>
-      <div id="rightDiv">side</div>
+      <div id="rightDiv">
+        <UserProfile pen={pen} />
+        <Cart cart={cart} />
+        <Voucher
+          voucher={voucher}
+          setVoucher={setVoucher}
+          applyVoucher={applyVoucher}
+        />
+        <Summary
+          total={total}
+          discount={discount}
+          voucherDiscount={voucherDiscount}
+          gratuity={gratuity}
+          finalTotal={finalTotal}
+        />
+        <button className="print-button">Print Receipt</button>
+      </div>
     </div>
   );
 };

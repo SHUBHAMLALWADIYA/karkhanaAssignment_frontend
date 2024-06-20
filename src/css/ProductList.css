@@ -1,0 +1,37 @@
+#items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    overflow-y: auto; /* Scrollable product section */
+    flex-grow: 1;
+    
+  }
+  #items::-webkit-scrollbar{
+    display: none;
+  }
+  
+  #items>.products {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .products>img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .products>button{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(249, 115, 67);
+    color: white;
+    border: none;
+    outline: none;
+  transition: all 0.3s ease-in;
+  }
+  .products>button:hover{
+    cursor: pointer;
+    background-color: rgb(235, 92, 40);
+  }
+  

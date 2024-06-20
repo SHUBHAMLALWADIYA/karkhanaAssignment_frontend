@@ -1,0 +1,67 @@
+#allFilter {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 5px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+    align-items: center;
+  }
+  
+  .filters>img {
+    width: 20%;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20%;
+  }
+  .filters:hover {
+    background-color: #8BABD3;
+    color: white;
+  }
+  
+  @media (max-width: 880px) {
+    #allFilter {
+      grid-template-columns: repeat(5, 1fr); /* Adjusted for smaller screens */
+    width: auto !important;
+    }
+  
+    .filters {
+     
+      padding: 8px; /* Reduced padding */
+    }
+  
+    .filters > p {
+      display: none; /* Hide filter text on smaller screens */
+    }
+  
+    .filters > img {
+      width: 40px; /* Smaller size for filter icons */
+      height: auto;
+    }
+  }
+  @media (max-width: 768px) {
+    #allFilter {
+      grid-template-columns: repeat(5, 1fr); /* Adjusted for smaller screens */
+    }
+  
+    .filters {
+      padding: 8px; /* Reduced padding */
+    }
+  
+    .filters > p {
+      display: none; /* Hide filter text on smaller screens */
+    }
+  
+    .filters > img {
+      width: 30px; /* Smaller size for filter icons */
+      height: 30px;
+    }
+  }
+  

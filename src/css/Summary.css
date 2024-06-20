@@ -1,0 +1,15 @@
+.cart-summary {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .summary-item.total {
+    font-weight: bold;
+  }
