@@ -9,9 +9,9 @@ Frontend
 https://667480d16a08c6ae49eb4bc6--karkhanafrontendassignmentshubhamlalw.netlify.app/
 
 
-## Directory Structure
-karkhanaAssignment_frontend/
-├── public/
+## Directory Structure\n
+karkhanaAssignment_frontend/\n
+├── public/\n
 │   ├── index.html
 │   ├── favicon.ico
 │   └── ...
