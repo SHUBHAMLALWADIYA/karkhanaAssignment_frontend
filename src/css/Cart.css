@@ -4,11 +4,20 @@
     flex-grow: 1;
     margin-bottom: 20px;
   }
-  
+  .cart-items::-webkit-scrollbar{
+    display: none;
+  }
   .cart-item {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
   }
-  
+  .remove{
+    padding: 3px;
+    background-color:rgb(249, 115, 67) ;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    outline: none;
+  }

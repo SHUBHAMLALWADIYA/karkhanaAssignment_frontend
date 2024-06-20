@@ -44,3 +44,13 @@
     border-bottom-right-radius:3px ;
     cursor: pointer;
   }
+
+  @media (max-width:768px) {
+    #nav>button{
+        width: auto;
+    }
+    #nav>button>img{
+        width: 30px;
+        height: 30px;
+    }
+  }
