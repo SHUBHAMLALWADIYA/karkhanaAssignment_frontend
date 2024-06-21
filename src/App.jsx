@@ -42,6 +42,7 @@ const App = () => {
   const addToCart = (item) => {
     setCart([...cart, item]);
     setTotal(total + item.price);
+    alert("Product is added in your cart")
   };
 
   const removeFromCart = (item) => {
