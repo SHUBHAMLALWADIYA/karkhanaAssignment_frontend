@@ -17,14 +17,16 @@ https://667480d16a08c6ae49eb4bc6--karkhanafrontendassignmentshubhamlalw.netlify.
 ## Directory Structure
 karkhanaAssignment_frontend/
 - ├── public/
-- │ ├── index.html
-- │ ├── favicon.ico
+- │ ├── vite.svg
 - │ └── ...
 - ├── src/
 - │ ├── assets/
 - │ │ ├── artisan.png
+- │ │ ├── assignment.png
+- │ │ ├── assignment1.png
 - │ │ ├── beverage.png
-- │ │ ├── coffee.png
+- │ │ ├── artisan.png
+- │ │ ├── compose.png
 - │ │ ├── filter.png
 - │ │ ├── hotTea.png
 - │ │ ├── mojito.png
@@ -39,7 +41,7 @@ karkhanaAssignment_frontend/
 - │ │ ├── UserProfile.jsx
 - │ │ ├── Voucher.jsx
 - │ │ └── ...
-- │ ├── styles/
+- │ ├── css/
 - │ │ ├── Cart.css
 - │ │ ├── Filters.css
 - │ │ ├── ProductList.css
