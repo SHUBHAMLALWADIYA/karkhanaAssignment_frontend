@@ -12,8 +12,7 @@ Frontend
 https://667480d16a08c6ae49eb4bc6--karkhanafrontendassignmentshubhamlalw.netlify.app/
 
 # screenshots of assignment
-
-
+![mainUI](./src/assets/assignment1.png)
 
 ## Directory Structure
 karkhanaAssignment_frontend/
@@ -61,16 +60,20 @@ karkhanaAssignment_frontend/
 ## Features
 List out the key features of your application.
 
-- add to-cart functionality
+- add to-cart functionality ( with alert )
 - remove products from the cart
-- you can apply vouchers for more discount
+- you can apply vouchers for more discount  ( DISCOUNT10 , DISCOUNT50 )
 - you can generate the total amount receipt through a popup msg
+- Responsive for all screen Size
+
 
 ## Tech Stack
-List and provide a brief overview of the technologies used in the project.
 
-- reactjs
-- javascript
+List and provide a brief overview of the technologies used in the project.
+- HTML
+- CSS
+- Javascript
+- React
 
 
 
