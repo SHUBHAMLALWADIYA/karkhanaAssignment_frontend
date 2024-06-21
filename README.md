@@ -2,11 +2,17 @@
 ## Introduction
 this is a company assignment given by Karkhana.io for their fronted role we have to clone the given image with add-to-cart functionality and many more...
 
+## Assignment 
+![Gimber](./src/assets/assignment.png)
+
 ## Project Type
 Frontend 
 
 ## Deployed App
 https://667480d16a08c6ae49eb4bc6--karkhanafrontendassignmentshubhamlalw.netlify.app/
+
+# screenshots of assignment
+
 
 
 ## Directory Structure
