@@ -11,7 +11,7 @@ Frontend
 ## Deployed App
 https://667480d16a08c6ae49eb4bc6--karkhanafrontendassignmentshubhamlalw.netlify.app/
 
-# screenshots of assignment
+# Screenshots of the assignment
 ![mainUI](./src/assets/assignment1.png)
 
 ## Directory Structure
@@ -50,13 +50,15 @@ karkhanaAssignment_frontend/
 - │ │ ├── UserProfile.css
 - │ │ ├── Voucher.css
 - │ │ └── ...
-- │ ├── App.jsx
 - │ ├── App.css
-- │ ├── index.js
+- │ ├── App.jsx
+- │ ├── index.css
 - │ └── ...
+- ├── .eslintrc.cjs
 - ├── .gitignore
 - ├── package.json
 - ├── README.md
+- ├── .index.html
 - └── ...
 
 ## Features
