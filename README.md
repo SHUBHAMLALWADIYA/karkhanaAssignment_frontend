@@ -52,7 +52,6 @@ karkhanaAssignment_frontend/
 -├── README.md
 -└── ...
 
-
 ## Features
 List out the key features of your application.
 
