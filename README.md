@@ -9,7 +9,7 @@ this is a company assignment given by Karkhana.io for their fronted role we have
 Frontend 
 
 ## Deployed App
-https://667480d16a08c6ae49eb4bc6--karkhanafrontendassignmentshubhamlalw.netlify.app/
+https://karkhanafrontendassignmentshubhamlalw.netlify.app/
 
 # Screenshots of the assignment
 ![mainUI](./src/assets/assignment1.png)
