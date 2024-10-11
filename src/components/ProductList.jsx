@@ -18,5 +18,4 @@ const ProductList = ({ data, addToCart }) => {
     </div>
   );
 };
-
 export default ProductList;

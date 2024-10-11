@@ -61,7 +61,7 @@
     grid-template-columns: repeat(
       2,
       1fr
-    ) !important; /* 2 products per row on small screens */
+    ) !important;
   }
 }
 #parent {
@@ -77,7 +77,7 @@
   padding: 30px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Allow leftDiv to grow and push rightDiv down */
+  flex-grow: 1; 
 }
 
 #rightDiv {
@@ -102,7 +102,7 @@
   }
 
   #rightDiv {
-    width: 80% !important; /* Ensure sidebar takes full width on medium screens */
+    width: 80% !important; 
     margin-top: 20px; /* Space between main content and sidebar */
   }
 }

@@ -13,5 +13,4 @@ const Filters = ({ filters }) => {
     </div>
   );
 };
-
 export default Filters;
